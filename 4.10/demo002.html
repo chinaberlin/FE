@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<button id="append">插入一个新节点</button>
+	<button id="append1">插入一个已经存在的节点</button>
+	<button id="append2">插入一个节点在第一个LI前面</button>
+	<button id="append3">删除第一个节点</button>
+	<button id="append4">克隆第一个节点</button>
+	<ul>
+		<li>
+			1
+		</li>
+		<li>
+			2
+		</li>
+	</ul>
+
+
+	<script type="text/javascript">
+
+		var $ = function(selector){
+			return document.querySelector(selector);
+		}
+
+
+		$('#append').onclick = function(){
+
+			var newLi = document.createElement('li');
+			// newLi.innerHTML = 2;
+			var text = document.createTextNode('中国');
+			newLi.appendChild(text);	
+
+			$('ul').appendChild(newLi);
+		}
+
+		$('#append1').onclick = function(){
+
+			var li = $('li');
+
+			$('ul').appendChild(li);
+			
+		}
+
+		$('#append2').onclick = function(){
+			var newLi = document.createElement('li');
+			var text = document.createTextNode('第一个li之前');
+			newLi.appendChild(text);	
+
+			$('ul').insertBefore(newLi,$('li'));
+		}
+
+		$('#append3').onclick = function(){
+			
+			$('ul').removeChild($('li'));
+		}
+
+		$('#append4').onclick = function(){
+			
+			// false 浅克隆
+			var cloneLi = $('li').cloneNode(false);
+			$('ul').appendChild(cloneLi);
+		}
+
+
+	</script>
+</body>
+</html>

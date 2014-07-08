@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>Tara</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheets/skeleton/base.css">
+<link rel="stylesheet" href="stylesheets/skeleton/skeleton.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/revoslider/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="colorpicker/css/colorpicker.css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+<link href="stylesheets/jquery-ui/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" media="screen">
+<link href="stylesheets/tara.css" rel="stylesheet" media="screen">
+<link href="stylesheets/white-green.css" rel="stylesheet" media="screen">
+<!--[if IE 8 ]><link href="stylesheets/ie8.css" rel="stylesheet" media="screen"><![endif]-->
+<script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+<body>
+<div id="colorpick" class="fixed closed">
+	<div id="colorpickerHolder"></div>
+	<div style="padding: 10px;">
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 1:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax1/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax1/index.html" />Dark</a></p>
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 2:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax2/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax2/index.html" />Dark</a></p>
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 3:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax3/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax3/index.html" />Dark</a></p>
+		<p style="margin: 0"><strong>Multi-page:</strong> <a href="http://www.themeflame.org/themes/tara/multi-page/light/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/multi-page/dark/index.html" />Dark</a></p>
+	</div>
+	<a id="colortoggle" href="javascript:void(0);" ><img src="images/gear.png" /></a>
+</div>
+	<div class="navbar fixed">
+		<div class="full-color"></div>
+		<div class="container">
+			<div class="logo left">
+				<a href="index.html" id="logo" title="Tara"><img src="images/logo.png" alt="Logo" /></a>
+			</div>
+			<div class="tara-extra-menu left">
+				<ul class="nav">
+					<li class="active">
+						<div class="tara-socials-small">
+							<a target="_blank" href="http://facebook.com" class="tara-smallsocial facebook"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial twitter"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial pinterest"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial vimeo"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial evernote"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial gplus"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial stumbleupon"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial linkedin"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial dribbble"></a>
+						</div>
+					</li>
+					<li><p>An extra menu where you can put anything you want!</p></li>
+				</ul>
+			</div>
+			<div class="nav-collapse collapse left">
+				<ul class="nav">
+					<li>
+						<a href="#home" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="#services" title="Services">Services</a>
+					</li>
+					<li>
+						<a href="#portfolio" title="Portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#about" title="About">About</a>
+					</li>
+					<li>
+						<a href="#blog" title="Blog">Blog</a>
+					</li>
+					<li>
+						<a href="#contact" title="Contact">Contact</a>
+					</li>
+					<li class="active">
+						<a href="shortcodes.html" title="Shortcodes">Shortcodes</a>
+					</li>
+					<li>
+						<a href="blogpost.html" title="Blogpost">Blogpost</a>
+					</li>
+				</ul>
+				<div class="tara-mobilemenu">
+					<select>
+						<option value="#home">Home</option>
+						<option value="#services">Services</option>
+						<option value="#portfolio">Portfolio</option>
+					</select>
+				</div>
+				<div id="menu-line" class="bgcolor"></div>
+			</div>
+			<div class="nav-separator"></div>
+			<div id="expand_menu" class="right">
+					<button class="btn right">
+						<img src="images/extra-menu.png" />
+					</button>
+			</div>
+		</div>
+	</div>
+	<div class="container center">
+		<div class="title">
+			<h2>Buttons</h2>
+			<div class="line"></div>
+		</div>
+		<div class="center tara-image-spacer">
+			<div class="eight columns">
+				<button class="tara-button transparent">Purchase now</button>
+				<button class="tara-button bgcolor">Purchase now</button>
+				<button class="tara-button fill transparent"><span class="middle bgcolor"></span>Purchase now</button>
+			</div>
+			<div class="eight columns right">
+				<button class="tara-button transparent round">Purchase now</button>
+				<button class="tara-button bgcolor round">Purchase now</button>
+				<button class="tara-button fill transparent round"><span class="middle bgcolor"></span>Purchase now</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="title">
+			<h2>ACCORDIONS & TABS</h2>
+			<div class="line"></div>
+		</div>
+		<div class="center tara-image-spacer">
+			<div class="eight columns">
+				<div class="tara-accordion">
+					<h5>Amazing Fully Working Effects</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+					<h5>Extremely Responsive</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+					<h5>Incredible Ease of Customization</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+				</div>
+			</div>
+			<div class="eight columns right">
+				<div class="tara-accordion bgfill">
+					<h5>Amazing Fully Working Effects</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+					<h5>Extremely Responsive</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+					<h5>Incredible Ease of Customization</h5>
+					<div>
+						<p>We respect the intellectual property rights of others, and require that those people who use the Sites, or the services or features made available.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="center tara-image-spacer">
+			<div class="eight columns">
+				<div class="tara-tabs">
+					<ul>
+						<li><a href="#tabs-1">Genius</a></li>
+						<li><a href="#tabs-2">Clean</a></li>
+						<li><a href="#tabs-3">Html5</a></li>
+					</ul>
+					<div id="tabs-1">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+					<div id="tabs-2">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+					<div id="tabs-3">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+				</div>
+			</div>
+			<div class="eight columns">
+				<div class="tara-tabs sidecontrols">
+					<ul>
+						<li><a href="#tabs-1">Genius</a></li>
+						<li><a href="#tabs-2">Clean</a></li>
+						<li><a href="#tabs-3">Html5</a></li>
+					</ul>
+					<div id="tabs-1">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+					<div id="tabs-2">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+					<div id="tabs-3">
+						<img src="images-demo/tabs-icon.png" style="float:left" />
+						<p>Envato may, at its sole discretion, revise or change these Terms and Conditions (in whole or in part) from time to time and at any time without notice to you.Changes in the Terms and Conditions will be effective when posted by us on the Sites.Your continued use of the Sites and/or the services made available on or through the Sites after any changes to the Terms and Conditions are posted will be considered acceptance of those changes.</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="title">
+			<h2>Pricing Tables</h2>
+			<div class="line"></div>
+		</div>
+		<div class="center tara-image-spacer tara-pricing-holder">
+			<div class="six columns">
+				<div class="tara-pricing">
+					<div class="tara-pricing-title bgcolor">
+						<h4>PIONEER PLAN</h4>
+					</div>
+					<div class="tara-pricing-price center">
+						<span class="big">$3</span>.99 / month
+					</div>
+					<ul>
+						<li>
+							Amazing Support
+						</li>
+						<li>
+							Never seen before features
+						</li>
+						<li>
+							Greatest quality on the market
+						</li>
+						<li>
+							12 hours of live chat
+						</li>
+						<li>
+							5 PSD files provided
+						</li>
+						<li>
+							3 Consultancy Sessions
+						</li>
+						
+					</ul>
+					<button class="tara-button bgcolor">Purchase now</button>
+				</div>
+			</div>
+			<div class="six columns">
+				<div class="tara-pricing">
+					<div class="tara-pricing-title bgcolor">
+						<h4>ROOKIE PLAN</h4>
+					</div>
+					<div class="tara-pricing-price center">
+						<span class="big">$4</span>.99 / month
+					</div>
+					<ul>
+						<li>
+							Amazing Support
+						</li>
+						<li>
+							Never seen before features
+						</li>
+						<li>
+							Greatest quality on the market
+						</li>
+						<li>
+							12 hours of live chat
+						</li>
+						<li>
+							5 PSD files provided
+						</li>
+						<li>
+							3 Consultancy Sessions
+						</li>
+						
+					</ul>
+					<button class="tara-button bgcolor">Purchase now</button>
+				</div>			
+			</div>
+			<div class="six columns ">
+				<div class="tara-pricing">
+					<div class="tara-pricing-title bgcolor">
+						<h4>VETERAN PLAN</h4>
+					</div>
+					<div class="tara-pricing-price center">
+						<span class="big">$5</span>.99 / month
+					</div>
+					<ul>
+						<li>
+							Amazing Support
+						</li>
+						<li>
+							Never seen before features
+						</li>
+						<li>
+							Greatest quality on the market
+						</li>
+						<li>
+							12 hours of live chat
+						</li>
+						<li>
+							5 PSD files provided
+						</li>
+						<li>
+							3 Consultancy Sessions
+						</li>
+						
+					</ul>
+					<button class="tara-button bgcolor">Purchase now</button>
+				</div>			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="title">
+			<h2>Typography & Columns</h2>
+			<div class="line"></div>
+		</div>		
+		<div class="tara-image-spacer" style="text-align: left;">
+			<h1>Headings <span class="color">and</span> columns</h1>
+			<h2>Headings <span class="color">and</span> columns</h2>
+			<h3>Headings <span class="color">and</span> columns</h3>
+			<h4>Headings <span class="color">and</span> columns</h4>
+			<h5>Headings <span class="color">and</span> columns</h5>
+			<h6>Headings <span class="color">and</span> columns</h6>
+		</div>
+		<div class="tara-image-spacer" style="text-align: left;">
+			<p class="tara-half left">
+				If you wish to sell stock photography on PhotoDune, you must first submit a zipped folder containing 5 – 15 photographs that are an <strong class="color">accurate reflection</strong> of your photographic portfolio.
+			</p>
+			<p class="tara-half left">
+				If you wish to sell <strong>stock photography</strong> on PhotoDune, you must first submit a zipped folder containing 5 – 15 photographs that are an accurate reflection of your photographic portfolio.
+			</p>
+			<div class="clearfix"></div>
+			<p class="tara-third left">
+				If you wish to sell stock photography on PhotoDune, you must first submit a zipped folder containing 5 – 15 photographs that are an <strong>accurate reflection</strong> of your photographic portfolio.
+			</p>
+			<p class="tara-third left">
+				If you wish to sell stock photography on PhotoDune, you <strong>must first</strong> submit a zipped folder containing 5 – 15 photographs that are an accurate reflection of your photographic portfolio.
+			</p>
+			<p class="tara-third left">
+				If you <strong>wish to sell</strong> stock photography on PhotoDune, you must first submit a zipped folder containing 5 – 15 photographs that are an accurate reflection of your photographic portfolio.
+			</p>
+			<div class="clearfix"></div>
+		</div>
+		<div class="title">
+			<h2>Info boxes</h2>
+			<div class="line"></div>
+		</div>
+		<div class="center tara-image-spacer">
+			<div class="tara-info-box error wide">
+				<span class="icon"></span>
+				<span class="message">That’s an error message, please don’t do that!</span>
+				<a class="close" href="javascript:void(0);"></a>
+			</div>
+			<div class="tara-info-box success wide">
+				<span class="icon"></span>
+				<span class="message">Congratulations! You’ve done that right!</span>
+				<a class="close" href="javascript:void(0);"></a>
+			</div>
+			<div class="tara-info-box download wide">
+				<span class="icon"></span>
+				<span class="message">That needs to be downloaded, really!</span>
+				<a class="close" href="javascript:void(0);"></a>
+			</div>
+			<div class="tara-info-box info wide">
+				<span class="icon"></span>
+				<span class="message">This shall be a nice box for general information!</span>
+				<a class="close" href="javascript:void(0);"></a>
+			</div>
+			<div class="tara-inline">
+				<div class="tara-info-box error circle">
+					<span class="icon"></span>
+					<span class="message">Error!</span>
+					<div class="triangle"></div>
+				</div>
+				<div class="tara-info-box success circle">
+					<span class="icon"></span>
+					<span class="message">Success!</span>
+					<div class="triangle"></div>
+				</div>
+				<div class="tara-info-box download circle">
+					<span class="icon"></span>
+					<span class="message">Download!</span>
+					<div class="triangle"></div>
+				</div>
+				<div class="tara-info-box info circle">
+					<span class="icon"></span>
+					<span class="message">Info!</span>
+					<div class="triangle"></div>
+				</div>
+			</div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="tara-buy-box border-color">
+				<div class="tara-inline left">
+					<h3><span class="color">Tara</span> seems to be what you need!</h3>
+					<p>If you scroled that far, it can only mean one thing...look on the right!</p>
+				</div>
+				<div class="tara-inline but">
+					<a class="tara-button bgcolor">Purchase now</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="title">
+			<h2>Social Icons</h2>
+			<div class="line"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="tara-socials-small">
+				<a target="_blank" href="http://facebook.com" class="tara-smallsocial facebook"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial twitter"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial pinterest"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial vimeo"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial evernote"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial gplus"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial stumbleupon"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial linkedin"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial dribbble"><span class="socialtext">Themeflame<div class="triangle"></div></span></a>
+			</div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="tara-socials-small openside">
+				<a target="_blank" href="http://facebook.com" class="tara-smallsocial facebook"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial twitter"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial pinterest"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial vimeo"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial evernote"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial gplus"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial stumbleupon"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial linkedin"><span class="socialtext">Themeflame</span></a>
+				<a target="_blank" href="http://twitter.com" class="tara-smallsocial dribbble"><span class="socialtext">Themeflame</span></a>
+			</div>
+		</div>
+		<div class="title">
+			<h2>Lists</h2>
+			<div class="line"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="columns two"></div>
+			<div class="columns four">
+				<ul class="tara-list-check">
+					<li>User Experience</li>
+					<li>User Interface</li>
+					<li>Responsive Design</li>
+					<li>Bulletproof Support</li>
+					<li>Gorgeous Design</li>
+				</ul>
+			</div>
+			<div class="columns two"></div>
+			<div class="columns four">
+				<ul class="tara-list-star">
+					<li>User Experience</li>
+					<li>User Interface</li>
+					<li>Responsive Design</li>
+					<li>Bulletproof Support</li>
+					<li>Gorgeous Design</li>
+				</ul>
+			</div>
+			<div class="columns two"></div>
+			<div class="columns four">
+				<ul class="tara-list-plus">
+					<li>User Experience</li>
+					<li>User Interface</li>
+					<li>Responsive Design</li>
+					<li>Bulletproof Support</li>
+					<li>Gorgeous Design</li>
+				</ul>
+			</div>
+			<div class="columns two"></div>
+			<div class="columns four">
+				<ul class="tara-list-arrow">
+					<li>User Experience</li>
+					<li>User Interface</li>
+					<li>Responsive Design</li>
+					<li>Bulletproof Support</li>
+					<li>Gorgeous Design</li>
+				</ul>
+			</div>
+		</div>
+		<div class="title">
+			<h2>Divider Lines</h2>
+			<div class="line"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="line full-width"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="line double full-width"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div class="line dashed full-width"></div>
+		</div>
+		<div class="title">
+			<h2>Twitter Feed</h2>
+			<div class="line"></div>
+		</div>
+		<div class="tara-image-spacer">
+			<div id="twitter-feed" data-screenname="themeflame" data-profile="Themeflame">
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="footerlogo left"><img src="images/logo-footer.png" /></div><span>Tara is a product of <a class="color" href="http://themeflame.co" target="_blank">Themeflame</a> All Rights Reserved.</span>
+		</div>
+	</div>
+	<div id="tarapreload"><div class="fill up"></div><div class="fill down"></div><div id="progressbar" class="bgcolor"></div></div>
+	<script type="text/javascript" src="js/retina.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.viewport.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/twitterfeed.js"></script>
+	<script type="text/javascript" src="js/tara.js"></script>
+<!-- Colorpicker for demo -->
+	<script type="text/javascript" src="js-demo/colorpicker.js"></script>
+    <script type="text/javascript" src="js-demo/eye.js"></script>
+    <script type="text/javascript" src="js-demo/utils.js"></script>
+    <script type="text/javascript" src="js-demo/layout.js?ver=1.0.2"></script>
+</body>
+</html>

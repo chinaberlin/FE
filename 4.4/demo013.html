@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			height: 300px;
+			background: red;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<button type="button" onclick="changeDiv(this)">隐藏</button>
+
+	<div>
+
+	</div>
+	
+	<script type="text/javascript">
+			
+			function changeDiv(button){
+
+				var display = 'none';
+
+				if(button.innerHTML === '显示'){
+					button.innerHTML = '隐藏';
+					display = 'block';
+				}else{
+					button.innerHTML = '显示';
+				}
+			
+				document.getElementsByTagName('div')[0].style.display = display;
+			}
+		
+	</script>	
+
+</body>
+</html>

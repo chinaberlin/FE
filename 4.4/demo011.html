@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li>
+
+		</li>
+		<li>
+
+		</li>
+		<li>
+
+		</li>
+	</ul>
+
+
+	<script type="text/javascript">
+		
+		var liList = document.getElementsByTagName('li');
+
+		for(var i = 0 , l = liList.length ; i < l ; i++){
+
+			liList[i].innerHTML = i;
+			if(i%2 === 0)
+				liList[i].style.background = 'red';
+			else
+				liList[i].style.background = 'blue';
+		}
+
+
+	</script>	
+
+</body>
+</html>

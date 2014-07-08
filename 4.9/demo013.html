@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+</head>
+<body>
+
+	<a href="demo012.html"><button>点我</button></a>
+
+	<script type="text/javascript">
+	
+
+		
+		document.getElementsByTagName('a')[0].onclick = function(e){
+
+			var e = e || window.event;
+
+			if(e.preventDefault){     //preventDefault的作用是阻止标签的默认行为。比如<a href='www.baidu.com'>百度</a>，此时点击百度会跳转到百度首页。如果使用了preventDefault，则会阻止a标签的跳转行为，去执行其他的动作。
+				e.preventDefault();
+			}else{
+				e.returnValue = false;
+			}
+
+			alert('button click');
+		}
+	</script>
+</body>
+</html>

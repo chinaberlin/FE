@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>课堂练习</title>
+	<style type="text/css">
+		#slider{margin:50px auto 30px;width:980px;position: relative;-moz-user-select: none}
+		#slider img{margin:0 auto;display: block;}
+		#slider span{background:url(images/arrows.png);display:block;width:14px;height:22px;cursor: pointer;}
+		#slider #left{position:absolute;top:145px;left:0;}
+		#slider #right{-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);position:absolute;top:145px;right:0;}
+	</style>
+</head>
+<body>
+	<div id="slider">
+		<img src="images/slider-1.jpg" />
+		<span id="left"></span>
+		<span id="right"></span>
+	</div>
+
+	<script type="text/javascript">
+	
+
+		(function(){
+
+
+			var n = 1;
+
+			var sliderEvent = function(){
+
+				// if(this.id ==== 'left'){
+				// 	if(n===1){
+				// 		n = 3;
+				// 	}else{
+				// 		n--;
+				// 	}
+				// }else{
+				// 	if(n===3){
+				// 		n = 1;
+				// 	}else{
+				// 		n++;
+				// 	}
+				// }
+				console.log(this);
+				this.id === 'left' ? 
+					n === 1 ? n = 3 : n--
+					:
+					n === 3 ? n = 1 : n++;
+
+				document.getElementById('slider').getElementsByTagName('img')[0].src = 'images/slider-' + n + '.jpg';
+			}
+
+			document.getElementById('left').onclick = sliderEvent;
+			document.getElementById('right').onclick = sliderEvent;
+		})();
+	</script>
+</body>
+</html>

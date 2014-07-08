@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<script type="text/javascript">
+		function a(c,d){
+			return c + d;
+		}
+
+
+		var b = new Function('c','d','return c + d;');
+		
+
+		// 递归
+		function test(num){
+
+			if(num === 100){
+				return num;
+			}
+
+			return num + test(num+1);
+		}
+
+		console.log(test(1));
+
+	</script>	
+
+</body>
+</html>

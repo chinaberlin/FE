@@ -1,0 +1,143 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<!-- 	
+		表单提交方式
+		method (post|get)
+
+		Form提交给哪个页面
+		action 
+	 -->
+
+	 <p>
+	 	<input type="text" value="" placeholder="Search.."name="search" id="search">
+	 	<input type="button" value="搜索">
+	 	<button type="button">搜索</button>
+	 </p>
+
+	<form method="get" action="http://www.baidu.com/#wd=2121212">
+		<input type="text" name="wd">
+		
+		<input type="submit" value="百度搜索一下">		
+	</form>
+
+
+	<form method="get" action="login.php">
+
+		<p>	
+			<!-- 
+				type 表达类型
+				id 表单在HTML里的编号
+				for 该label指向哪个表单
+				name 用作与后台区分表单
+				value 表单的默认值
+				maxlength 表单输入内容最大限制
+				disabled 禁止表单输入
+				placeholder 表单输入提示
+				autocomplete 关闭自动完成
+			 -->
+			<label for="username">
+				用户名:
+			</label>
+			<input 
+				id="username" 
+				type="text" 
+				name="username" 
+				value="张三" 
+				maxlength="5" 
+				disabled="disabled"
+				placeholder="用户名必须是英文字母开始"
+				autocomplete="off"
+			/>
+		</p>
+
+		<p>
+			<label for="password">
+				密&nbsp;&nbsp;码:
+			</label>
+			<input type="password" name="password" id="password">
+		</p>
+
+		<p>
+			<!-- 
+				 checked 默认选中
+			 -->
+			<label for="sex">
+				性别:
+			</label>
+			<label>
+				男:<input type="radio" name="sex" value="1" id="sex" checked="checked">
+			</label>
+			<label>
+				女:<input type="radio" name="sex" value="0">
+			</label>
+		</p>
+
+		<p>
+			<label for="hobby">
+				爱&nbsp;&nbsp;好:
+			</label>
+			<label>
+				打酱油:<input type="checkbox" name="hobby" value="打酱油">
+			</label>
+			<label>
+				玩游戏:<input type="checkbox" name="hobby" checked="checked" value="玩游戏">
+			</label>
+			<label>
+				购物:<input type="checkbox" name="hobby" value="购物">
+			</label>
+		</p>
+
+		<p>	
+			<label>
+				出生地
+			</label>
+			<select name="city">
+				<option value="-1">--请选择出生地--</option>
+				<option value="0">上海</option>
+				<option value="1">北京</option>
+				<option value="2">杭州</option>
+			</select>
+		</p>
+
+		<p>
+			<!-- 上传 -->
+			<label for="avatar"> 
+				头像
+			</label>
+			<input id="avatar" type="file" name="avatar" >
+		</p>
+
+		<p>	
+			<!-- 隐藏表单 -->
+			<input type="hidden" value="sdiauii129129129" name="key">
+		</p>
+
+		<p>
+			<!-- 文本域 -->
+			<label>个人介绍</label>
+			<textarea name="introduce" rows="10" cols="100"></textarea>
+		</p>
+
+		<p>
+			<!-- 多选下拉菜单 -->
+			<select multiple="multiple" size="5">
+				<option>上海服务器</option>
+				<option>北京服务器</option>
+				<option>杭州服务器</option>
+				<option>上海服务器</option>
+				<option>北京服务器</option>
+				<option>杭州服务器</option>
+				<option>上海服务器</option>
+				<option>北京服务器</option>
+				<option>杭州服务器</option>
+			</select>
+		</p>
+		<input type="submit" value="注册">	
+		<input type="reset">
+	</form>
+</body>
+</html>

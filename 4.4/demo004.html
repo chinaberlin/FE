@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<script type="text/javascript">
+			
+		var arr = ['a','d','d','c','b','a'];
+		
+		/**
+		 * 过滤数组中重复的值
+		 * @param Array arr 需要过滤重复的数组
+		 * @return Array 去重复后的数组
+		 */
+		function filterRepeat(arr){
+			
+			var filter = [] , hash = {} , l = arr.length , i = 0;
+
+			for(; i < l ; i++){
+
+				if(hash[arr[i]] === undefined){
+					hash[arr[i]] = true;
+					filter.push(arr[i]);
+				}
+
+			}
+
+			return filter;
+		}
+
+		var filterArr = filterRepeat(arr);
+
+		console.log(filterArr);
+		
+
+	</script>	
+
+</body>
+</html>

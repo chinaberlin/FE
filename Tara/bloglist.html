@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>Tara</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheets/skeleton/base.css">
+<link rel="stylesheet" href="stylesheets/skeleton/skeleton.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/revoslider/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="colorpicker/css/colorpicker.css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href="stylesheets/jquery-ui/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" media="screen">
+<!-- Load blog styles separately -->
+<link href="stylesheets/tara-blog.css" rel="stylesheet" media="screen">
+<link href="stylesheets/tara.css" rel="stylesheet" media="screen">
+<link href="stylesheets/white-green.css" rel="stylesheet" media="screen">
+<!--[if IE 8 ]><link href="stylesheets/ie8.css" rel="stylesheet" media="screen"><![endif]-->
+<script type="text/javascript" src="js/modernizr.js"></script>
+</head>
+<body>
+<div id="colorpick" class="fixed closed">
+	<div id="colorpickerHolder"></div>
+	<div style="padding: 10px;">
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 1:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax1/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax1/index.html" />Dark</a></p>
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 2:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax2/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax2/index.html" />Dark</a></p>
+		<p style="padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #f0f0f0"><strong>Parallax 3:</strong> <a href="http://www.themeflame.org/themes/tara/light/parallax3/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/dark/parallax3/index.html" />Dark</a></p>
+		<p style="margin: 0"><strong>Multi-page:</strong> <a href="http://www.themeflame.org/themes/tara/multi-page/light/index.html" />Light</a>  -  <a href="http://www.themeflame.org/themes/tara/multi-page/dark/index.html" />Dark</a></p>
+	</div>
+	<a id="colortoggle" href="javascript:void(0);" ><img src="images/gear.png" /></a>
+</div>
+	<div class="navbar fixed">
+		<div class="full-color"></div>
+		<div class="container">
+			<div class="logo left">
+				<a href="index.html" id="logo" title="Tara"><img src="images/logo.png" alt="Logo" /></a>
+			</div>
+			<div class="tara-extra-menu left">
+				<ul class="nav">
+					<li class="active">
+						<div class="tara-socials-small">
+							<a target="_blank" href="http://facebook.com" class="tara-smallsocial facebook"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial twitter"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial pinterest"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial vimeo"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial evernote"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial gplus"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial stumbleupon"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial linkedin"></a>
+							<a target="_blank" href="http://twitter.com" class="tara-smallsocial dribbble"></a>
+						</div>
+					</li>
+					<li><p>An extra menu where you can put anything you want!</p></li>
+				</ul>
+			</div>
+			<div class="nav-collapse collapse left">
+				<ul class="nav">
+					<li class="active">
+						<a href="#home" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="#services" title="Services">Services</a>
+					</li>
+					<li>
+						<a href="#portfolio" title="Portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#about" title="About">About</a>
+					</li>
+					<li>
+						<a href="#blog" title="Blog">Blog</a>
+					</li>
+					<li>
+						<a href="#contact" title="Contact">Contact</a>
+					</li>
+					<li>
+						<a href="shortcodes.html" title="Shortcodes">Shortcodes</a>
+					</li>
+					<li>
+						<a href="blogpost.html" title="Blogpost">Blogpost</a>
+					</li>
+				</ul>
+				<div class="tara-mobilemenu">
+					<select>
+						<option value="#home">Home</option>
+						<option value="#services">Services</option>
+						<option value="#portfolio">Portfolio</option>
+					</select>
+				</div>
+				<div id="menu-line" class="bgcolor"></div>
+			</div>
+			<div class="nav-separator"></div>
+			<div id="expand_menu" class="right">
+					<button class="btn right">
+						<img src="images/extra-menu.png" />
+					</button>
+			</div>
+		</div>
+	</div>
+	<div class="tara-page container">
+		<div class="tara-widget dropdown left">
+			<ul>
+				<li class="selected">
+					<img src="images-demo/bloglist-author.jpg" />
+					<strong>Posts by Vincent</strong>
+				</li>
+				<li>
+					<img src="images-demo/bloglist-author.jpg" />
+					<strong>Posts by Vincent</strong>
+				</li>
+				<li>
+					<img src="images-demo/bloglist-author.jpg" />
+					<strong>Posts by Vincent</strong>
+				</li>
+				<li>
+					<img src="images-demo/bloglist-author.jpg" />
+					<strong>Posts by Vincent</strong>
+				</li>
+			</ul>
+			<a href="javascript:void(0);" class="right open-authors"></a>
+			<div class="clearfix"></div>
+		</div>
+		<div class="tara-content right">
+	 		<div class="tara-blog-list-post">		
+	 			<div class="tara-blog-list-content left">
+	 				<div class="tara-blog-image right">
+	 					<img src="images-demo/bloglist1.jpg" />
+	 					<h2>Themeflame Prepares To Hit 6,000 Sales By The End of June!</h2>
+	 					<div class="tara-blog-separator"></div>
+	 				</div>
+					<div class="tara-blog-list-side left">
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon author"></span>
+							<p>Vincent Winght</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon date"></span>
+							<p>27.03.2013</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon reactions"></span>
+							<p>32</p>
+						</div>
+					</div>
+	 				<p class="right">Those an equal point no years do. Depend warmth fat but her butplayed. Shy and subjects wondered trifling pleasant. Prudent cordial comfort do no on colonel asassured chicken. Smart mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at...</p>
+	 			</div>
+	 		</div>
+			<div class="tara-blog-list-post">
+	 			<div class="tara-blog-list-content left">
+	 				<div class="tara-blog-image right">
+	 					<img src="images-demo/bloglist1.jpg" />
+						<h2>Themeflame Prepares To Hit 6,000 Sales By The End of June!</h2>
+						<div class="tara-blog-separator"></div>
+	 				</div>
+					<div class="tara-blog-list-side left">
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon author"></span>
+							<p>Vincent Winght</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon date"></span>
+							<p>27.03.2013</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon reactions"></span>
+							<p>32</p>
+						</div>
+					</div>
+	 				<p class="right">Those an equal point no years do. Depend warmth fat but her butplayed. Shy and subjects wondered trifling pleasant. Prudent cordial comfort do no on colonel asassured chicken. Smart mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at...</p>
+	 			</div>
+	 		</div>
+	 		<div class="clearfix"></div>
+			<div class="tara-blog-list-post">
+	 			<div class="tara-blog-list-content left">
+	 				<div class="tara-blog-image right">
+	 					<img src="images-demo/bloglist1.jpg" />
+						<h2>Themeflame Prepares To Hit 6,000 Sales By The End of June!</h2>
+						<div class="tara-blog-separator"></div>
+	 				</div>
+					<div class="tara-blog-list-side left">
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon author"></span>
+							<p>Vincent Winght</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon date"></span>
+							<p>27.03.2013</p>
+						</div>
+						<div class="tara-blog-list-feat">
+							<span class="tara-blog-icon reactions"></span>
+							<p>32</p>
+						</div>
+					</div>
+	 				<p class="right">Those an equal point no years do. Depend warmth fat but her butplayed. Shy and subjects wondered trifling pleasant. Prudent cordial comfort do no on colonel asassured chicken. Smart mrs day which begin. Snug do sold mr it if such. Terminated uncommonly at at...</p>
+	 			</div>
+	 		</div>
+	 		<div class="clearfix"></div>
+		</div>
+		<div class="tara-sidebar left">
+			<div class="tara-widget">
+				<h5>Popular news</h5>
+				<ul>
+					<li>
+						<img class="left" src="images-demo/sidebar-1.jpg" />
+						<h6><a href="#">Expecting Great Results from Tara In Her First Week!</a></h6>
+						<p>14th March, 4550 views </p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-2.jpg" />
+						<h6><a href="#">Tara Released as PSD - Great Results Expected!</a></h6>
+						<p>14th March, 3271 views </p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-3.jpg" />
+						<h6><a href="#">We’ve got great talent at Themeflame!</a></h6>
+						<p>14th March, 5320 views </p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-4.jpg" />
+						<h6><a href="#">How To Create Lasting Wordpress Themes</a></h6>
+						<p>14th March, 2105 views </p>
+					</li>
+				</ul>
+			</div>
+			<div class="tara-widget">
+				<h5>Latest reactions</h5>
+				<ul>
+					<li>
+						<img class="left" src="images-demo/sidebar-5.jpg" />
+						<h6><a href="#">John: He surely has got lots of things going on now that he c...</a></h6>
+						<p>on <a href="#">How To Create Lasting Wordp...</a></p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-6.jpg" />
+						<h6><a href="#">Taylor: Unbelievable Design! I never thought of anything like...</a></h6>
+						<p>on <a href="#">Expecting Great Results from...</a></p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-7.jpg" />
+						<h6><a href="#">Cosmo: I don’t think he’s going to be able to even get close to w...</a></h6>
+						<p>on <a href="#">Tara Released as PSD - Great...</a></p>
+					</li>
+					<li>
+						<img class="left" src="images-demo/sidebar-8.jpg" />
+						<h6><a href="#">Anna: Can’t actually believe they won this match, it seemed like...</a></h6>
+						<p>on <a href="#">We’ve got great talent at The...</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="tara-widget">
+				<h5>Featured video</h5>
+				<div class="tara-widget-video">
+				<iframe src="http://player.vimeo.com/video/32756097?title=0&amp;byline=0&amp;portrait=0" width="300" height="169" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="footerlogo left"><img src="images/logo-footer.png" /></div><span>Tara is a product of <a class="color" href="http://themeflame.co" target="_blank">Themeflame</a> All Rights Reserved.</span>
+		</div>
+	</div>
+	<div id="tarapreload"><div class="fill up"></div><div class="fill down"></div><div id="progressbar" class="bgcolor"></div></div>
+	<script type="text/javascript" src="js/retina.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/imagesloaded.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.viewport.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/tara.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+	<script type="text/javascript">
+		jQuery('.dropdown ul').slideTo(65,300,'linear');
+	</script>
+<!-- Colorpicker for demo -->
+	<script type="text/javascript" src="js-demo/colorpicker.js"></script>
+    <script type="text/javascript" src="js-demo/eye.js"></script>
+    <script type="text/javascript" src="js-demo/utils.js"></script>
+    <script type="text/javascript" src="js-demo/layout.js?ver=1.0.2"></script>
+</body>
+</html>

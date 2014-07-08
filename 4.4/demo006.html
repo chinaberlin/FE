@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		ul{
+			list-style: none;
+			padding:0;
+		}
+	</style>
+</head>
+<body>
+<!-- 	<li>
+		blog
+		<ul>
+			<li>
+				php
+				<ul>
+					<li>
+						Zend Framework 2
+					</li>
+					<li>
+						Yii Framework
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>	 -->
+	<script type="text/javascript">
+		
+
+		// blog
+		// 	php
+		// 		Zend Framework 2
+		// 		Yii Framework
+		// 	javascript
+		// 	python
+		// 	ruby
+		// Video
+		// 	angularjs
+		// 	php
+		// 	html5
+
+
+		var category = [
+			{
+				name:'blog',
+				children:[
+					{
+						name:'php',
+						children:[
+							{
+								name:'Zend Framework 2'
+							},
+							{
+								name:'Yii Framework',
+								children:[
+									{
+										name:'php',
+										children:[
+											{
+												name:'Zend Framework 2'
+											},
+											{
+												name:'Yii Framework'
+											}
+										]
+									},
+									{
+										name:'javascript'
+									},
+									{
+										name:'python'
+									},
+									{
+										name:'ruby'
+									}
+								]
+							}
+						]
+					},
+					{
+						name:'javascript'
+					},
+					{
+						name:'python'
+					},
+					{
+						name:'ruby'
+					}
+				]
+			},
+			{
+				name:'Video',
+				children:[
+					{
+						name:'angularjs'
+					},
+					{
+						name:'php'
+					},
+					{
+						name:'html5'
+					}
+				]
+			}
+		];
+
+
+		function createTree(data,depth){
+
+			var html = '<ul>';
+
+			for(var i = 0 ,  l = data.length ; i < l ;i++){
+
+				html += '<li style="text-indent:'+depth+'em;">' +data[i].name;
+
+				if(data[i].children){
+					html += createTree(data[i].children,depth+1);
+				}
+
+				html += '</li>';
+			}
+
+			html += '</ul>';
+
+			return html;
+		}
+
+		var html = createTree(category,1);
+
+		document.write(html);
+	</script>	
+
+</body>
+</html>

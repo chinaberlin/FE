@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 5px;
+			height: 5px;
+			background: red;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<script type="text/javascript">
+
+		// for(var i = 0 ; i < Math.PI * 2 ; i+= .01){
+		// 	var div = document.createElement('div');
+		// 	div.style.left = Math.cos(i) * 150 + 150 + 'px';
+		// 	div.style.top = Math.sin(i) *150 + 150 + 'px';
+		// 	document.body.appendChild(div);
+		// }
+		
+		for(var i=0;i<Math.PI*2;i+= .01){
+			var div=document.createElement('div');
+			div.style.left=Math.cos(i)*150+300+'px';
+			div.style.top=Math.sin(i)*150+300+'px';
+			document.body.appendChild(div);
+		}
+
+	</script>
+</body>
+</html>

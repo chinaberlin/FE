@@ -1,0 +1,185 @@
+body, .tara-form input[type="text"], .tara-form input[type="password"], .tara-form input[type="email"], .tara-form textarea, .tara-form select, .tara-timeline-spacer, 
+.tara-timeline-circle, .tara-skill p, .tara-services, .tara-contact, .circle.small, .tarabox-content, .twitter-icon-name  {
+background: #FFFFFF;
+}
+	.tara-button.triangledown, span.service-icon-holder, .tara-about-slider ul li .text a.action, .tara-button.transparent.white {
+	border-color: #FFFFFF;
+	}
+.color, .tara-timeline-event:hover h5, .tara-timeline-event:hover .tara-timeline-date,
+ul.nav li.active a, ul.nav li a:hover, .tara-button.transparent:hover, a:hover  {
+color: #7cb23a
+}
+	.dark-color, a.color:hover {
+	color: #62961f;
+	}
+.bgcolor, .dark-bgcolor, .tara-button:hover, span.service-icon-holder, .tara-portfolio-filters ul li a:hover, .tara-portfolio-filters ul li a.selected,
+.tara-button.triangledown:hover, .tara-button.triangledown.selected, .tara-timeline-event:hover .tara-timeline-circle .circle, .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
+.ui-accordion.bgfill h5.ui-accordion-header-active, .tara-tabs.ui-tabs.sidecontrols ul li.ui-tabs-active, .tara-services-control a:hover .square, .tara-tabs.ui-tabs ul li.ui-tabs-active a { 
+background-color: #7cb23a; 
+}
+	.tara-portfolio-filters ul li a:hover, .tara-portfolio-filters ul li a.selected, .caption.tara-slider-title, .caption.tara-slider-text, .box .tara-button, .box h3, .black h2,  .black h4, .box .punchline h5, .tara-portfolio-item-title,
+	.tara-about-slider ul li .text p, .tara-about-slider ul li .text h2, .tara-about-slider ul li .text a.action, .black .tara-abox, .tara-form .tara-button, .tara-form input.tara-button:disabled, .tara-button.transparent.white , .tara-info-box, .tara-buy-box h3, 
+	.tara-smallsocial .socialtext, .tara-slider {
+	color: #FFFFFF;
+	}
+	.border-color, .tara-button.transparent:hover, .tara-form input[type="text"]:focus, .tara-form input[type="password"]:focus, .tara-form input[type="email"]:focus, .tara-form textarea:focus {
+	border-color: #7cb23a 
+	}
+		.box .punchline .triangle.border-color { border-color: transparent transparent #7cb23a transparent; }
+		.tara-button.triangledown:hover > .triangle, .tara-button.triangledown.selected > .triangle {
+		border-color: #7cb23a transparent transparent;
+		}
+		.tara-button.triangledown:hover, .tara-button.triangledown.selected {
+		color: #323232;
+		}
+.tara-widget.infocat .triangle {
+border-color: transparent transparent transparent #7cb23a;
+}
+.dark-bgcolor, .tara-button:hover {
+background-color: #62961f;
+}
+.ui-accordion.bgfill h5.ui-accordion-header-active .ui-accordion-header-icon {
+background-color: #70A231;
+}
+	h1, h2, h5, .service-icon h2,  {
+	color: #2C2C2C;
+	}
+.tara-skill {
+background-color: #EDEDED;
+}
+h2 a, .tara-blog-list-content h2 {
+color: #737373;
+}
+	.tara-tabs.ui-tabs ul li a, .ui-accordion.bgfill h5, .tara-pricing-title h4  {
+	color: #373737;
+	}
+body, a , p, h5, .tara-portfolio-filters ul li a, .tara-skill p, .tara-timeline-date, .tara-form input[type="text"], .tara-form input[type="password"], .tara-form input[type="email"], .tara-form textarea, .tara-form select,
+.tara-contact-info h4, .tara-address-row a, .tara-button.transparent {
+color: #888888;
+}
+.line, .tara-contact-separator {
+background-color: #CACACA;
+}
+.tara-button, a.tara-button:hover, .tara-button.transparent.fill:hover {
+color: #404040;
+}
+.navbar, .tara-mobilemenu, #footer {
+background-color: #0e0e0e;
+}
+ul.nav li a, .tara-mobilemenu select {
+color: #dadada;
+}
+	.tara-mobilemenu select option:selected, .circle.medium p {
+	color: #000000;
+	}
+	.nav-separator {
+	background-color:#2A2A2A;
+	}
+	.full-color, #expand_menu .btn, .tara-mobilemenu select {
+	background-color: #080808;
+	}
+.square {
+background-color: #d0d0d0;
+}
+.half-height.black p, .full-height.black p, .tarabox-content h5, .tarabox-content h2, .tarabox-content p, .tarabox-controls button {
+color: #e4e4e4;
+}
+.tara-abox-holder {
+background-color: #F6F6F6;
+}
+.tara-abox {
+color: #676767;
+}
+	.tara-carousel-item-text h2, .tara-carousel-item-text h3 {
+	color: #7C7C7C;
+	}
+	.tara-skill.fill > .slice > .pie {
+	background-color: #c0c0c0;
+	}
+	.tara-button.triangledown {
+	color: #6c6c6c;
+	}
+	.tara-button.triangledown {
+	background-color: #c4c4c4;
+	}
+	.tara-vertical-line  {
+	background-color: #888888;
+	}
+.tara-blog-separator {
+background-color: #a1a1a1;
+}
+.tarabox-content .separator {
+background-color: #8b8b8b;
+}
+.thumb {
+background-color: #3d3d3d;
+}
+#tarapreload .fill {
+background: #000000;
+}
+.ui-accordion.bgfill h5, .tara-tabs.ui-tabs ul li a, .tara-tabs.sidecontrols ul li {
+background-color: #cfcfcf; 
+}
+	.ui-accordion.bgfill h5 .ui-accordion-header-icon {
+	background-color: #adadad;
+	}
+		.ui-accordion.bgfill .ui-accordion-content {
+		background-color: #bdbdbd;
+		}
+	.ui-accordion.bgfill .ui-accordion-content p {
+	color: #616161;
+	}
+	.tara-pricing {
+	background-color:#e5e5e5;
+	}
+		.tara-pricing-price {
+		background-color: #dbdbdb;
+		}
+	.tara-info-box.info {
+	background-color: #4ab3c6;
+	}
+	.tara-buy-box {
+	background-color: #181818;
+	}
+	.circle.small {
+	border-color: #CACACA;
+	}
+	.service-icon .circle.outer {
+	border-color: #424242;
+	}
+	.service-icon .triangle {
+	border-color: #424242 transparent transparent;
+	}
+	.tara-abox, .tara-abox-top, .black .tara-abox {
+	border-color: #D5D5D5;
+	}
+	.tara-skill > .slice > .hide {
+	border-color: #EDEDED;
+	}
+	.tara-button.triangledown .triangle {
+	border-color: #c4c4c4 transparent transparent;
+	}
+	.tara-timeline-circle, .tara-button.transparent {
+	border-color: #888888;
+	}
+	.tara-form input[type="text"], .tara-form input[type="password"], .tara-form input[type="email"], .tara-form textarea, .tara-form select {
+	border-color: #e9e9e9;
+	}
+	.tarabox-controls button {
+	border-color: #c1c1c1;
+	}
+	.ui-accordion h5.ui-accordion-header, .tara-tabs.ui-tabs ul {
+	border-color: #cfcfcf;
+	}
+	.ui-accordion.bgfill h5.ui-accordion-header-active {
+	border-color: #7eb43b;
+	}
+	.line.double, .line.dashed  {
+	border-color: #747474;
+	}
+	
+@media only screen and (max-width: 767px) {
+	.tara-extra-menu.menuopen {
+	background-color: #080808;
+	}
+}

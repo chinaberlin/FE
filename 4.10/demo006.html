@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		#boxOutside{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left:50px;
+			top:50px;
+			border:1px solid red;
+		}
+		#box{
+			position: absolute;
+			border:1px solid #666;
+			background: #999;
+			width: 150px;
+			height: 50px;
+			left:30px;
+			top:30px;
+		}
+	</style>
+</head>
+<body>
+
+	<img src="slider-3.png" width="100" />
+
+
+
+	<script type="text/javascript">
+
+
+		document.body.onclick = function(e){
+			var e = e || window.event;
+
+			var target = e.target || e.srcElement;
+
+			if (target.tagName.toLowerCase() !== 'img' )
+				return;
+
+			var src = target.src;
+
+			var origImg = document.createElement('img');
+
+			origImg.src = 'http://kittencup.qiniudn.com/wp-content/uploads/2014/03/anguarjs-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B.png';
+	
+
+			document.body.appendChild(origImg);
+
+			origImg.onload = function(){
+				
+				
+
+					
+			}
+			
+		}
+
+
+
+
+	</script>
+</body>
+</html>

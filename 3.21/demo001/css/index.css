@@ -1,0 +1,166 @@
+/*global start*/
+body{
+	font-size: 12px;
+	margin:0;
+	color:#666;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#666;
+}
+p{
+	margin:0;
+}
+img{
+	border:none;
+}
+.clearFix:after{
+	content:' ';
+	display: block;
+	font-size: 0;
+	clear: both;
+}
+.clearFix{
+	zoom:1;
+}
+.layout{
+	width: 980px;
+	margin:0 auto;
+}
+/*global end*/
+
+#header{
+	height:150px;
+}
+
+/*menu start*/
+#menu .menu-l{
+	width: 3px;
+	height: 41px;
+	background:url(../images/menu_l.gif);
+	float: left;
+}
+#menu .menu-r{
+	width: 3px;
+	height: 41px;
+	background:url(../images/menu_r.gif);
+	float: left;
+}
+#menu .menu-c{
+	width: 974px;
+	background:url(../images/menu_c.gif);
+	float: left;
+}
+
+#menu .menu-c ul{
+	float: left;
+}
+#menu .menu-c li{
+	float: left;
+}
+
+#menu .menu-c a{
+	display: block;
+	padding:12.5px 20px;
+	background: url(../images/menu_o.gif) no-repeat right;
+}
+
+#menu .menu-c p{
+	float: right;
+	padding:12.5px 20px;
+}
+/*menu end*/
+
+/*slider start*/
+#slider{
+	position: relative;
+}
+#slider img{
+	display: block;
+}
+#slider div{
+	width: 932px;
+	margin:0 auto;
+	/*超出当前div宽度或高度的内容 X和Y全部隐藏*/
+	overflow: hidden;
+}
+#slider ul{
+	width: 9999px;
+}
+#slider li{
+	float: left;
+}
+#slider .slider-l{
+	display: block;
+	width: 46px;
+	height:81px;
+	background: url(../images/imgPlayer_l.png);
+
+	position: absolute;
+	top:110px;
+	left:24px;
+}
+
+#slider .slider-r{
+	display: block;
+	width: 46px;
+	height:81px;
+	background: url(../images/imgPlayer_r.png);
+	right:24px;
+	position: absolute;
+	top:110px;
+}
+
+/*slider end*/
+#main{
+	margin-top: 10px;
+}
+#main .main-c{
+	width: 600px;
+	float: left;
+}
+#main .main-c-t-l{
+	background: url(../images/title_l.gif);
+	width: 5px;
+	height: 32px;
+	float: left;
+}
+#main .main-c-t-r{
+	background: url(../images/title_r.gif);
+	width: 5px;
+	height: 32px;
+	float: left;
+}
+#main .main-c-t-c{
+	background: url(../images/title_c.gif);
+	width: 580px;
+	padding:9px 5px;
+	float: left;
+}
+#main .main-c-b{
+	height: 220px;
+	border:1px solid #999;
+	border-top: none;
+}
+
+#main .main-c-2{
+	width: 370px;
+	margin-left:10px;
+}
+
+#main .main-c-2 .main-c-t-c{
+	width: 350px;
+}
+
+#footer{
+	padding:20px 0;
+	text-align: center;
+}
+#footer a{
+	padding:0 10px;
+}

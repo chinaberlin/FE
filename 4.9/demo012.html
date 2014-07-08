@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+</head>
+<body>
+
+	<button>点我</button>
+
+	<script type="text/javascript">
+	
+
+		document.body.onclick = function(){
+			alert('body click');
+		}
+		document.getElementsByTagName('button')[0].onclick = function(e){
+
+			var e = e || window.event;
+
+			if(e.stopPropagation){      // stopPropagation作用是阻止默认的冒泡事件
+				e.stopPropagation();   //stopPropagation在chrome Firefox下有效
+			}else{
+				e.cancelBubble = true;  //cancelBubble在IE下有效 
+			}
+
+			alert('button click');
+		}
+	</script>
+</body>
+</html>

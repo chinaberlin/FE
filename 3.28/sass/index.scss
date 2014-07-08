@@ -1,0 +1,91 @@
+/**
+ * Mixin
+ */
+@mixin blockCenter($top:0,$bottom:0){
+	margin:$top auto $bottom;
+}
+
+@mixin radius($value:0){
+	-webkit-border-radius:$value;
+	-ms-border-radius:$value;
+	-o-border-radius:$value;
+	-moz-border-radius:$value;
+	border-radius:$value;
+}
+@mixin transition($property:all,$duration:0.5s,$timing:linear,$delay:0s){
+	-webkit-transition:$property $duration $timing $delay;
+	-moz-transition:$property $duration $timing $delay;
+	-o-transition:$property $duration $timing $delay;
+	-ms-transition:$property $duration $timing $delay;
+	transition:$property $duration $timing $delay;
+}
+@mixin clearFix{
+	display: block;
+	clear: both;
+	content:' ';
+}
+/**
+ * var
+ */
+$layoutWidth:80%;
+
+$headerHeight:150px;
+
+$navFontSize:12px;
+$navBorderColor:#ddd;
+$navFontColor:#666;
+$navFontHoverColor:red;
+$navAOrPPadding:12.5px 20px;
+
+
+/**
+ * css
+ */
+#header{
+	height: $headerHeight;
+}
+
+#nav{
+
+	width:$layoutWidth;
+
+	border:1px solid $navBorderColor;
+	
+	@include radius(5px);
+
+	@include blockCenter(10px);
+
+	&:after{
+		@include clearFix;
+	}
+
+	ul{
+
+		float: left;
+
+		li{
+			float: left;
+			border-right: 1px solid $navBorderColor;
+			a{
+				text-decoration: none;
+				display: block;
+				color:$navFontColor;
+				padding: $navAOrPPadding;
+				font-size: $navFontSize;
+				
+				@include transition(color);
+
+				&:hover{
+					color:$navFontHoverColor;
+				}
+			}
+		}
+	}
+
+	p{
+		float: right;
+		color:$navFontColor;
+		padding: $navAOrPPadding;
+		font-size: $navFontSize;
+	}
+}

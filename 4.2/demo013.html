@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var youdao = ['a','f','b','c'];
+		    google = ['e','d','e','f','c'];
+
+
+		function concat(arr1,arr2){
+
+			var newArr = [];
+
+			for(var i = 0 ; i < arr1.length ; i++){
+				newArr.push(arr1[i]);
+			}
+
+			for(var i = 0 ; i < arr2.length ; i++){
+				newArr.push(arr2[i]);
+			}
+
+			return newArr;
+		}
+
+		var arr = concat(youdao,google);
+
+		console.log(arr);
+
+		// [a,b,c,d,e,f]
+	</script>
+
+</body>
+</html>

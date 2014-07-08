@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<script type="text/javascript">
+			
+		// 实例化一个构造函数
+		var o = new Object();
+
+
+		var student = {
+			// 键值 : 值 ,
+			name : '张三',
+			age  : 20,
+			// 对象里方法 就是一个函数
+			introduce:function(){
+				return '我的名字是'+this.name+'我的年龄是'+this.age+'我来自'+this.city;
+			},
+			city:'上海'
+		};
+
+
+		//alert(student.introduce());
+		//alert(student['city'])
+		
+
+		// var key = 'city';
+		// student[key]
+
+
+		for(var key in student){
+			console.log(student[key]);
+		}
+
+		// 删除一个属性
+		delete student.name;
+
+
+	</script>	
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+/*** TARA BLOG STYLES ***/
+.tara-page {
+padding: 56px 0 40px;
+}
+	.tara-sidebar {
+	width: 390px;
+	clear: left;
+	}
+		.tara-widget {
+		width: 304px;
+		padding: 25px 25px 5px;
+		background-color: #f6f6f6;
+		margin: 0 0 36px;
+		position: relative;
+		}
+		.tara-widget.infocat {
+		padding: 0;
+		text-align: center;
+		width: 354px;
+		}
+			.tara-widget.infocat .author {
+			border-right: 1px solid rgba(0,0,0,0.15);
+			padding: 30px 25px 30px;
+			}
+				.tara-infocat-row {
+				color: #2c2c2c;
+				font-family: 'NovecentoWideNormal', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				padding: 26px 0;
+				}
+					.tara-infocat-row.border {
+					border-bottom: 1px solid rgba(0,0,0,0.15);
+					}
+			.tara-widget.infocat .count {
+			width: 52%;
+			}
+			.tara-widget.infocat h5 {
+			color: #2c2c2c;
+			font-size: 12px;
+			}
+			.tara-widget.infocat img {
+			margin: 0;
+			}
+			.tara-widget.infocat .triangle {
+			border-width: 11px 0 11px 10px;
+			border-style: solid;
+			position: absolute;
+			right: -10px;
+			top: 50%;
+			margin-top: -11px;
+			}
+			.tara-widget h5, .tara-comments h5 {
+			color: #2c2c2c;
+			}
+			.tara-widget ul {
+			margin: 0;
+			padding: 22px 0 0;
+			}
+				.tara-widget ul li {
+				overflow: hidden;
+				margin-bottom: 20px;
+				}
+					.tara-widget h6, .tara-widget h6 a {
+					font-size: 13px;
+					font-family: 'Roboto';
+					font-weight: bold;
+					color: #5C5C5C;
+					margin-top: -5px;
+					}
+					.tara-widget p, .tara-comments p {
+					font-size: 13px;
+					margin: 0;
+					}
+					.tara-widget img {
+					margin: 0 10px 0 0;
+					}
+			.tara-widget-video {
+			padding: 23px 0 20px;
+			}
+	.tara-content {
+	width: 570px
+	}
+		.tara-content img.imgtop {
+		display: block;
+		}
+		.tara-post {
+		padding: 15px 28px 20px;
+		text-align: left;
+		background-color: #f6f6f6;
+		}
+			.tara-post h5.posttitle {
+			font-size: 15px;
+			color: #5c5c5c
+			}
+			.tara-post .separator {
+			margin: 24px 0 24px;
+			width: 102px;
+			height: 1px;
+			background: #5c5c5c;
+			}
+			.tara-post blockquote {
+			font-family: 'Roboto', sans-serif;
+			font-size: 22px;
+			line-height: 1.2em;
+			padding: 0 0 0 60px;
+			background-image: url('../images/quotes.png');
+			background-position: 30px 0px;
+			background-repeat: no-repeat;
+			border: none;
+			margin: 30px 0;
+			}
+				.tara-post blockquote span {
+				border-width: 0 0 0 3px;
+				border-style: solid;
+				display: block;
+				padding: 0 14px;
+				}
+		.tara-post-socials {
+		background-color: #f0f0f0;
+		padding: 26px 28px;
+		}
+			.social-spacer {
+			float: left;
+			margin: 0 24px 0 0;
+			}
+		.tara-comments {
+		margin-top: 36px;
+		background-color: #f6f6f6;
+		padding: 25px;
+		}
+			.tara-comments ul {
+			padding: 40px 0 0;
+			}
+				.tara-comments ul li {
+				margin-bottom: 32px;
+				}
+					.tara-comments ul li h5 {
+					font-size: 15px;
+					color: #3c3c3c;
+					line-height: 12px;
+					padding: 0 0 5px;
+					}
+					.tara-comments ul li img {
+					margin: 0 10px 18px 0;
+					}
+					.tara-comments ul li a.tara-reply {
+					background-image: url('../images/reply-icon.png');
+					padding-left: 20px;
+					background-repeat: no-repeat;
+					font-size: 12px;
+					background-position: left center;
+					color: #888888;
+					font-weight: bold;
+					font-family: 'Roboto', sans-serif;
+					}
+		.tara-comments .tara-form { 
+		padding: 0;
+		}
+			.tara-comments .tara-form input[type="text"], .tara-comments .tara-form input[type="password"], .tara-comments .tara-form input[type="email"], .tara-comments .tara-form textarea,  .tara-comments.tara-form select {
+			border-color: #d5d5d5;
+			}
+	.open-authors {
+	width: 65px;
+	height: 65px;
+	background: url('../images/bloglist-down.png') center center no-repeat #c3c3c3;
+	display: block;
+	position: absolute;
+	right: 0;
+	top:0;
+	}
+		.open-authors.selected {
+		-moz-transform: scaleY(-1);
+		-o-transform: scaleY(-1);
+		-webkit-transform: scaleY(-1);
+		transform: scaleY(-1);
+		filter: FlipV;
+		-ms-filter: "FlipV";
+		}
+	.tara-widget.dropdown {
+	padding: 0;
+	width: 354px;
+	position: relative
+	}
+		.tara-widget.dropdown img {
+		display: block;
+		}
+		.tara-widget.dropdown ul {
+		padding: 0;
+		overflow: hidden;
+		}
+			.tara-widget.dropdown ul li {
+			margin: 0;
+			}
+			.tara-widget.dropdown ul li strong {
+			color: #2c2c2c;
+			vertical-align: middle;
+			font-size: 15px;
+			font-family: 'Roboto';
+			}
+				.tara-widget.dropdown ul li.selected strong {
+				font-weight: bold;
+				}
+			.tara-widget.dropdown ul li img { 
+			display: inline;
+			vertical-align: middle;
+			}

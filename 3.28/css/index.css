@@ -1,0 +1,56 @@
+/**
+ * Mixin
+ */
+/**
+ * var
+ */
+/**
+ * css
+ */
+#header {
+  height: 150px;
+}
+
+#nav {
+  width: 80%;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px auto 0;
+}
+#nav:after {
+  display: block;
+  clear: both;
+  content: ' ';
+}
+#nav ul {
+  float: left;
+}
+#nav ul li {
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+#nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: #666666;
+  padding: 12.5px 20px;
+  font-size: 12px;
+  -webkit-transition: color 0.5s linear 0s;
+  -moz-transition: color 0.5s linear 0s;
+  -o-transition: color 0.5s linear 0s;
+  -ms-transition: color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
+}
+#nav ul li a:hover {
+  color: red;
+}
+#nav p {
+  float: right;
+  color: #666666;
+  padding: 12.5px 20px;
+  font-size: 12px;
+}

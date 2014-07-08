@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		/**
+		 * 创建构造函数时 首字母大写
+		*/
+
+
+		function Person(name,age){
+			this.name = name;
+			this.age = age;
+			console.log(this);				//this指的是当前构造函数Person
+			function f(){
+				console.log(this);          //this指的是window.因为构造函数里变量不使用局部作用域；
+			}
+			f();
+			if(this==window){
+				console.log(age + name);  
+			}
+			// this.say = function(){
+			// 	console.log(1000);
+			// }
+		}
+
+		Person.prototype.say = function(){
+			console.log(this.name + this.age);
+		}
+
+
+		var p1 = new Person('张三',20);		
+		var p3=Person('柏林',28)  
+		p1.say();
+
+		// 默认情况下，如果你的构造函数中没有返回任何内容，就会返回this----当前的上下文，也就是你当前创建的对象。要不然就返回任意非原始类型的值。而普通的函数如果没有明显的返回值将返回undefined。
+
+		// 总结
+		// 当一个函数要作为构造函数使用时通常将函数名首字母大写表示这是个构造函数，同时，一定要用new去调用构造函数。另外尽量不要把构造函数做普通函数使用，因为容易产生全局变量，同时如果处理不好返回值容易对构造函数自身的功能产生影响。
+
+	</script>
+</body>
+</html>
